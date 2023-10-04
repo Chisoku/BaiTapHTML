@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password</title>
+    <style>
+        body {
+            background-color: yellow;
+            padding: 30px;
+        }    
+    </style>
+    <script>
+        function checkPassword(){
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if(passwordText == "Ernest300"){
+                return true;
+            }
+            alert("Mật khẩu là Ernest300 mà thầy =DD");
+
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <p style="font-size: 30pt;">THE MONK PIKACHU DISCOVERY</p>
+    <p>Thầy nhập mật khẩu đi thầy.</p>
+    <p>Mật khẩu : <input id="passwordBox" type="password"/></p>
+    <a href="Mission1.html" onclick="return checkPassword();">
+        Thầy nhấn vào đây để xác nhận mật khẩu đi thầy !
+    </a>
+</body>
+</html>
